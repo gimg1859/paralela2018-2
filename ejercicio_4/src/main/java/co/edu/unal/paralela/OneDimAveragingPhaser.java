@@ -110,6 +110,7 @@ public final class OneDimAveragingPhaser {
         Phaser[] phs = new Phaser[tasks];
         for(int i=0;i<phs.length;i++){
             phs[i] = new Phaser(1);
+            //1 to resgister self
         }
 
         Thread[] threads = new Thread[tasks];
