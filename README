@@ -356,7 +356,7 @@ Las modificaciones solo se deben realizar en OneDimAveragingPhaser.java. No se p
 OneDimAveragingPhaser.java contiene un PARA HACER:
 Basado en la version secuencial proporcionada en OneDimAveragingPhaser.runSequential y la version paralela en OneDimAveragingPhaser.runParallelBarrier, implementar una version paralela que utilice phasers para maximizar la superposición entre la terminación de  la barrera y la realización de trabajo útil.
 
-
+con ayuda de http://www.congqiyuan.com/JavaStack
 
 public static void seqMatrixMultiply(double[][] A, double B[][], double[][] C, int n) throws SuspendableException {
 	long startTime = System.nanoTime();
