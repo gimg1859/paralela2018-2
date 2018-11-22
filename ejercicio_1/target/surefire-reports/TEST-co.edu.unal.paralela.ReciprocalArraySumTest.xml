@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.ReciprocalArraySumTest" time="73.846" tests="4" errors="0" skipped="0" failures="4">
+<testsuite name="co.edu.unal.paralela.ReciprocalArraySumTest" time="52.553" tests="4" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13"/>
@@ -59,32 +59,88 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="36.902">
-    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  3,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  3,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:149)
-</failure>
-  </testcase>
-  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.409">
-    <failure message="Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces
+  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.999">
+    <failure message="Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 0,300000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 0,300000x veces
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
 	at co.edu.unal.paralela.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:114)
 </failure>
+    <system-out><![CDATA[parArraySum completed in   50,357 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,651 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,510 milliseconds, with sum = 104672,52500 
+parArraySum completed in    1,765 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,223 milliseconds, with sum = 104672,52500 
+parArraySum completed in   68,974 milliseconds, with sum = 104672,52500 
+parArraySum completed in   12,350 milliseconds, with sum = 104672,52500 
+parArraySum completed in   14,667 milliseconds, with sum = 104672,52500 
+parArraySum completed in   17,754 milliseconds, with sum = 104672,52500 
+parArraySum completed in   14,319 milliseconds, with sum = 104672,52500 
+parArraySum completed in   21,509 milliseconds, with sum = 104672,52500 
+parArraySum completed in   31,171 milliseconds, with sum = 104672,52500 
+parArraySum completed in   32,959 milliseconds, with sum = 104672,52500 
+parArraySum completed in   26,850 milliseconds, with sum = 104672,52500 
+parArraySum completed in    6,279 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,178 milliseconds, with sum = 104672,52500 
+parArraySum completed in    8,858 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,203 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,946 milliseconds, with sum = 104672,52500 
+parArraySum completed in   18,730 milliseconds, with sum = 104672,52500 
+parArraySum completed in   12,868 milliseconds, with sum = 104672,52500 
+parArraySum completed in    9,597 milliseconds, with sum = 104672,52500 
+parArraySum completed in    7,794 milliseconds, with sum = 104672,52500 
+parArraySum completed in   17,060 milliseconds, with sum = 104672,52500 
+parArraySum completed in   12,486 milliseconds, with sum = 104672,52500 
+parArraySum completed in    9,715 milliseconds, with sum = 104672,52500 
+parArraySum completed in    7,543 milliseconds, with sum = 104672,52500 
+parArraySum completed in    8,570 milliseconds, with sum = 104672,52500 
+parArraySum completed in   19,415 milliseconds, with sum = 104672,52500 
+parArraySum completed in    6,607 milliseconds, with sum = 104672,52500 
+parArraySum completed in   11,336 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,888 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,720 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,531 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,977 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,964 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,896 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,779 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,942 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,054 milliseconds, with sum = 104672,52500 
+parArraySum completed in    9,346 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,781 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,873 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,747 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,859 milliseconds, with sum = 104672,52500 
+parArraySum completed in    4,239 milliseconds, with sum = 104672,52500 
+parArraySum completed in    8,919 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,921 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,947 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,921 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,057 milliseconds, with sum = 104672,52500 
+parArraySum completed in    5,783 milliseconds, with sum = 104672,52500 
+parArraySum completed in    4,006 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,186 milliseconds, with sum = 104672,52500 
+parArraySum completed in    4,137 milliseconds, with sum = 104672,52500 
+parArraySum completed in    2,888 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,895 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,221 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,440 milliseconds, with sum = 104672,52500 
+parArraySum completed in    1,587 milliseconds, with sum = 104672,52500 
+parArraySum completed in    3,110 milliseconds, with sum = 104672,52500 
+]]></system-out>
   </testcase>
-  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="36.16">
-    <failure message="Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse 1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse 1,500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.ReciprocalArraySumTest.testParSimpleTwoHundredMillion(ReciprocalArraySumTest.java:125)
-</failure>
-  </testcase>
-  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.375">
-    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 2,400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 2,400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1,000000x veces
+  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="25.844"/>
+  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.303">
+    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 2,400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse 2,400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,000000x veces
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
 	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:137)
+</failure>
+  </testcase>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="25.407">
+    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  3,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,968085x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  3,200000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 2,968085x veces
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:149)
 </failure>
   </testcase>
 </testsuite>
