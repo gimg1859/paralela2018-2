@@ -1,5 +1,6 @@
 package co.edu.unal.paralela;
 
+import co.unal.edu.unal.paralela.MatrixMultiply;
 import java.util.Random;
 
 import junit.framework.TestCase;
